@@ -15,7 +15,10 @@ pipeline {
          sh "mvn clean install package    " 
       }    
     }
-
-
+ }
+     post {
+        always {
+          cleanWs()
+        }
     }
 }
