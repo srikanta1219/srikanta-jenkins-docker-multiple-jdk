@@ -1,12 +1,12 @@
 pipeline {
-    agent none
+    agent any
 
     stages {
         stage("Build & Test") {
             matrix {
                 agent {
                     dockerfile {
-                        label "docker"
+                      //label "docker"
 
                         additionalBuildArgs """
                             --build-arg JAVA_VERSION=$JAVA \
@@ -42,6 +42,11 @@ pipeline {
                     }
                 }
             }
+        }
+    }
+    post {
+        always {
+            cleanWs()
         }
     }
 }
