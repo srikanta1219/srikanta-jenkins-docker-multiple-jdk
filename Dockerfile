@@ -14,7 +14,7 @@ USER $USER_UID
 
 RUN curl -s "https://get.sdkman.io" | bash
 
-ARG JAVA_VERSION="11.0.7-amzn"
+ARG JAVA_VERSION="11.0.12-open"
 ARG MAVEN_VERSION="3.8.4"
 
 RUN bash -c "source $HOME/.sdkman/bin/sdkman-init.sh && \
