@@ -25,7 +25,7 @@ pipeline {
                     }
                     axis {
                         name "MAVEN"
-                        values "3.6.3"
+                        values "3.8.4"
                     }
                 }
                 stages {
