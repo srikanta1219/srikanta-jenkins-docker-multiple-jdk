@@ -5,7 +5,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /tmp/*
 
-ARG USER_UID="1000"
+ARG USER_UID="1001"
 ARG USER_NAME="jenkins"
 
 RUN useradd -m -U -u $USER_UID $USER_NAME
