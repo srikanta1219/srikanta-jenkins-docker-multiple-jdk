@@ -21,7 +21,7 @@ pipeline {
                 axes {
                     axis {
                         name "JAVA"
-                        values "11.0.7-amzn", "8.0.282-open", "18.ea.35-open"
+                        values "11.0.12-open", "8.0.282-open", "18.ea.35-open"
                     }
                     axis {
                         name "MAVEN"
@@ -32,7 +32,7 @@ pipeline {
                     stage("Build") {
                         steps {
                             sh "mvn -version"
-                            sh "mvn clean package"
+                            sh "mvn -DskipTests clean package"
                         }
                     }
                     stage("Test") {
