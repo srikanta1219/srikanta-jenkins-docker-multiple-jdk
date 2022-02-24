@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.github.wololock</groupId>
-  <artifactId>maven-pipeline-demo</artifactId>
+  <artifactId>srikanta-jenkins-docker-multiple-jdk</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>maven-pipeline-demo</name>
+  <name>srikanta-jenkins-docker-multiple-jdk</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
