@@ -32,7 +32,7 @@ pipeline {
                     stage("Build") {
                         steps {
                             sh "mvn -version"
-                            sh "mvn  clean package"
+                            sh "mvn  clean install package"
                         }
                     }
                     stage("Test") {
