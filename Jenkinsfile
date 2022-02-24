@@ -15,7 +15,7 @@ pipeline {
                             -t mymaven:${MAVEN}-jdk-${JAVA}
                         """.stripIndent().trim()
 
-                        args "-v /tmp/maven:/home/jenkins/.m2/"
+                        args "-v /tmp/maven:/home/jenkins/.m2"
                     }
                 }
                 axes {
@@ -32,7 +32,7 @@ pipeline {
                     stage("Build") {
                         steps {
                             sh "mvn -version"
-                            sh "mvn  clean install package"
+                            sh "mvn -DskipTests clean package"
                         }
                     }
                     stage("Test") {
