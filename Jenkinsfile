@@ -15,7 +15,7 @@ pipeline {
                             -t mymaven:${MAVEN}-jdk-${JAVA}
                         """.stripIndent().trim()
 
-                        args "-v /tmp/maven:/home/jenkins/.m2/"
+                        args "-v /tmp/maven:/home/jenkins/.m2/repository"
                     }
                 }
                 axes {
